@@ -13,3 +13,18 @@ body {
     font-family: $font-content;
     color: $dark-blue;
 }
+
+section#baseline {
+    background-color: $light-grey;
+}
+
+footer#footer {
+    background-color: #707070;
+    color: white;
+    font-size: 0.92rem;
+    a.link-white {
+        color: white;
+        text-decoration: underline;
+        
+    }
+}

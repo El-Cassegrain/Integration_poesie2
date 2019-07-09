@@ -25,10 +25,10 @@
     @include box_shadow(2);
     text-transform: uppercase;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.8s ease-in;
-    &:hover {
-        background-color: lighten($pink, 2%);
+    //transition: all 0.25s ease-in;
+    &:hover, &:focus, &:active {
         color: white;
+        background-color: $light-pink !important;
     }
 }
 

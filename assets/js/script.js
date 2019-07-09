@@ -17,6 +17,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
 
-/*$('.more-info').onclick(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});*/
+/* More texts */
+$('#btn-more-text').click(function(){
+    $('.more-singles').removeClass('d-none');
+});
