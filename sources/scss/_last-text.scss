@@ -1,0 +1,37 @@
+/* Section Last text styles */
+section#last-text {
+    background-color: $light-grey;
+    .title-text {
+        font-size: 2rem;
+        color: $dark;
+    }
+    p {
+        color: $dark;
+    }
+}
+
+.metas {
+    span {
+        
+        i {
+            font-size: 1.39rem;
+            color: $light-green;
+        }
+    }
+    .comment i {
+        color: $pink;
+    }
+}
+
+.about-text-card-header {
+    background-color: #fff !important;
+}
+
+.about-text i {
+    font-size: 1.45rem;
+}
+
+.last-comment {
+    border: 1px solid darken($light-grey, 10%);
+    background-color: #fff;
+}

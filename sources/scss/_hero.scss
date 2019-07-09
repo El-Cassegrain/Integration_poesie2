@@ -1,0 +1,14 @@
+/* Hero section */
+section#hero-section {
+    height: 100vh;
+    background: url('../img/avatar-bg-big.png') bottom right no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+//Others viewports
+@media screen and (min-width: 360px) and (max-width:400px){
+    section#hero-section {
+        background: url('../img/avatar-444x740.jpg') bottom right no-repeat;
+    }
+}

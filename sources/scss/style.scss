@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "global";
+@import "header";
+@import "hero";
+@import "last-text";
+@import "excerpt";
+
+@import "bootstrap/bootstrap";
+
+/* Styles */
+body {
+    font-family: $font-content;
+    color: $dark-blue;
+}

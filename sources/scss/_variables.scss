@@ -1,0 +1,35 @@
+/* Colors */
+$light-pink: #FFAFDA;
+$pink: #FF84C6;
+$dark-blue: #0A2D40;
+$dark-blue-alt: #1D4358;
+$light-green: #C2CCC2;
+$light-grey: #F4F4F4;
+$grey: #949494;
+$dark: #000;
+
+$primary: $pink;
+$secondary: $dark-blue;
+
+
+/* Fonts */
+$font-title: 'Roboto', sans-serif;
+$font-content: 'Roboto', sans-serif;
+$font-cursive: 'Satisfy', cursive;
+$font-logo: 'Lobster', cursive;
+$font-link: 'Roboto Slab', serif;
+
+/* Transitions */
+$btn-transition: all 0.8s ease-in;
+
+/* Text Shadow global */
+$text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px
+);

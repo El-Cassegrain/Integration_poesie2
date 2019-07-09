@@ -1,0 +1,143 @@
+@import "variables";
+@import "mixins";
+
+/* Global styles */
+*::selection {
+    background-color: lighten($light-pink, 5%);
+    color: #282828;
+}
+
+/* Responsive typography */
+html{font-size: 16px}
+@media screen and (min-width: 576px){html{font-size: 100%}}
+@media screen and (min-width: 768px){html{font-size: 103,33%}}
+//@media screen and (min-width: 992px){html{font-size: 110%}}
+@media screen and (min-width: 1200px){html{font-size: 106,66%}}
+@media screen and (min-width: 1900px){html{font-size: 110%}}
+
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.centered-v {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Fonts */
+.title {
+    font-family: $font-title;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.35rem;
+    color: $dark-blue;
+}
+
+div.hr {
+    background-color: $light-green;
+    width: 3.7rem;
+    height: 0.81rem;
+    margin: 10px 0 25px 0;
+}
+
+.font-link {
+    font-family: $font-link;
+    font-size: 0.91rem;
+}
+
+.font-content {
+    font-family: $font-content;
+    font-weight: 400;
+}
+
+.font-logo {
+    font-family: $font-logo;
+}
+
+.font-cursive {
+    font-family: $font-cursive;
+}
+
+/* Colors */
+.pink {
+    color: $pink;
+}
+
+.light-pink {
+    color: $light-pink;
+}
+
+.light-green {
+    color: $light-green;
+}
+
+.light-grey {
+    color: $light-grey;
+}
+
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.grey {
+    color: $grey;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+
+.bg-dark-blue-alt {
+    background-color: $dark-blue-alt;
+}
+
+.dark {
+    color: $dark;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px !important;
+}
+
+.btn-pink {
+    @include btn-pink;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: lighten($pink, 2%) radial-gradient(circle, transparent 1%, lighten($pink, 5%) 1%) center/15000%;
+}
+.ripple:active {
+  background-color: darken($pink, 3%);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Link */
+.link {
+    @include primary-link;
+}
+
+.link-alt {
+    @include link-alt;
+}
